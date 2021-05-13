@@ -1,0 +1,27 @@
+{
+	"name": "typescript-course",
+	"version": "0.1.0",
+	"description": "TypeScript course",
+	"main": "app.js",
+	"scripts": {
+		"start": "lite-server",
+		"test": "test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GavrilenkoGeorgi/typescript-course.git"
+	},
+	"keywords": [
+		"typescript",
+		"tutorial"
+	],
+	"author": "Gavrilenko",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GavrilenkoGeorgi/typescript-course/issues"
+	},
+	"homepage": "https://github.com/GavrilenkoGeorgi/typescript-course#readme",
+	"devDependencies": {
+		"lite-server": "^2.6.1"
+	}
+}
