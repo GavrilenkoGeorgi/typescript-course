@@ -2,6 +2,7 @@ function add(n1: number, n2: number, showResult: boolean, resultPhrase: string) 
 	const result = n1 + n2
 	if (showResult) {
 		console.log(resultPhrase + result)
+		return
 	} else {
 		return result
 	}
