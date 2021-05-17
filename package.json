@@ -5,8 +5,7 @@
 	"main": "app.js",
 	"scripts": {
 		"start": "lite-server",
-		"tsc:watch": "tsc -w",
-		"test": "test"
+		"tsc:watch": "tsc -w"
 	},
 	"repository": {
 		"type": "git",
