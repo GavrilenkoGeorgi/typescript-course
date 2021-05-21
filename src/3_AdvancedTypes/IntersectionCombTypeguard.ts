@@ -1,5 +1,3 @@
-// console.log('Hi TS! Everything is in the chapter folders.')
-
 // intersection types
 type Admin = {
 	name: string,
@@ -49,6 +47,13 @@ type Numeric = number | boolean
 
 type Universal = Comb & Numeric
 
+/**
+ * Function overloads
+ */
+function combineTypes(a: number, b: number): number;
+function combineTypes(a: string, b: string): string;
+function combineTypes(a: number, b: string): string;
+
 // typeguards
 function combineTypes(a: Comb, b: Comb) {
 	if (typeof a === 'string' || typeof b === 'string') {
@@ -56,6 +61,24 @@ function combineTypes(a: Comb, b: Comb) {
 	}
 	return a + b
 }
+
+const result = combineTypes(2, ' 2')
+result.split(' ')
+
+// optional chaining
+const fetchedUserData = {
+	id: 'u1',
+	name: 'Max',
+	job: { title: 'CEO', description: 'My own company' }
+}
+
+console.log(fetchedUserData.job && fetchedUserData.job.title)
+console.log(fetchedUserData?.job?.title)
+
+// nullish Coalescing
+const inputValue = null
+// only if null or undefined then the default value is used
+const storedData = inputValue ?? 'DEFAULT'
 
 type UnknownEmployee = Employee | Admin
 
